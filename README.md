@@ -1,8 +1,6 @@
 # SymbolSerializer
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/symbol_serializer`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem contains a `SymbolSerializer` module which is intended to act as a concern for `ActiveJob::Base`. It allows us to use symbols as values in the queue payload, by serializing them before enqueueing them, and then deserializing the serialized values before the queue executes the code in any given job.
 
 ## Installation
 
@@ -22,14 +20,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Intended to be used as follows:
+```
+class YourJob < ActiveJob::Base
+  include SymbolSerializer
+
+  def perform(symbol_argument)
+    ...
+  end
+end
+```
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+<Add something here>
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/symbol_serializer.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Bizongo/symbol_serializer.
