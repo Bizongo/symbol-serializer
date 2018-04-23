@@ -1,5 +1,2 @@
 require "symbol_serializer/version"
-
-module SymbolSerializer
-  # Your code goes here...
-end
+require "symbol_serializer/symbol_serializer"

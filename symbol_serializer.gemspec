@@ -6,8 +6,8 @@ require "symbol_serializer/version"
 Gem::Specification.new do |spec|
   spec.name          = "symbol_serializer"
   spec.version       = SymbolSerializer::VERSION
-  spec.authors       = ["Anuj Khandelwal"]
-  spec.email         = ["khandelwal.anuj14@gmail.com"]
+  spec.authors       = ["Yash Doshi", "Anuj Khandelwal"]
+  spec.email         = ["yash@bizongo.in", "khandelwal.anuj14@gmail.com"]
 
   spec.summary       = %q{Contains a library which enables us to serialize and deserialize data}
   spec.description   = %q{Contains a concern that allows us to serialize all the values before passing them to Sidekiq and deserialize them before Sidekiq operates on them}
