@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Anuj Khandelwal"]
   spec.email         = ["khandelwal.anuj14@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Contains a library which enables us to serialize and deserialize data}
+  spec.description   = %q{Contains a concern that allows us to serialize all the values before passing them to Sidekiq and deserialize them before Sidekiq operates on them}
+  spec.homepage      = "https://bizongo.in"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.16"
+  spec.add_development_dependency "bundler", "~> 1.15.0"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
 end
