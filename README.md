@@ -7,16 +7,12 @@ This gem contains a `SymbolSerializer` module which is intended to act as a conc
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'symbol_serializer'
+gem "symbol_serializer", git: "git@github.com:Bizongo/symbol-serializer.git"
 ```
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install symbol_serializer
+    $ bundle install
 
 ## Usage
 
@@ -30,10 +26,6 @@ class YourJob < ActiveJob::Base
   end
 end
 ```
-
-## Development
-
-<Add something here>
 
 ## Contributing
 
